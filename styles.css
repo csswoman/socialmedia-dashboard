@@ -1,4 +1,21 @@
-.attribution {
-    font-size: 11px; text-align: center; }
-.attribution a
-    { color: hsl(228, 45%, 44%); }
+body {
+    margin: 0;
+}
+.wrapper{
+    padding: 0 30px;
+}
+
+
+.card {
+    border-radius: 5px;
+    overflow: hidden;
+    background: hsl(227, 47%, 96%);
+
+}
+.card:before {
+    content: "";
+    height: 4px;
+    display: block;
+    background: red;
+    
+}
