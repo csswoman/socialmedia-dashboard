@@ -44,7 +44,8 @@ h1{
 }
 
 .top-card {
-margin-top: -50px;
+    margin-top: -50px;
+    margin-bottom: 3em;
 }
 
 .card {
@@ -91,10 +92,6 @@ margin-top: -50px;
     margin-right: 5px;
 }
 
-.card-followers {
-
-}
-
 .card-followers__number {
     font-size: 50px;
     font-weight: 700;
@@ -121,7 +118,11 @@ margin-top: -50px;
 }
 
 .overview {
-    margin-top: 100px;
+    padding-top: 2em;
+}
+
+h2 {
+    color: var(--dark-gray);
 }
 
 .card-small {
@@ -166,4 +167,16 @@ margin-top: -50px;
 }
 .card-small-percentage img {
     margin-right: 5px;
+}
+
+@media screen and (min-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 25px;
+    }
+
+    .wrapper {
+        max-width: 1440px;
+        margin: auto;
+    }
 }
