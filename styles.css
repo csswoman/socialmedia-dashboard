@@ -13,14 +13,41 @@ body {
     --youTube: hsl(348, 97%, 39%);
     --dark-gray: hsl(228, 12%, 44%);
     --gray: hsl(230, 22%, 74%);
+    --top-bg: hsl(225, 100%, 98%);
 }
 .wrapper{
     padding: 0 30px;
 }
 
+.grid {
+    display: grid;
+    grid-row-gap: 25px;
+}
+
+.header {
+    background: var(--top-bg);
+    padding-bottom: 100px;
+    border-radius: 0 0 20px 20px;
+    padding-top: 2em;
+}
+.header-total {
+    color: var(--dark-gray);
+    margin: .5em 0;
+    font-weight: 600;
+    border-bottom: 2px solid var(--gray);
+    padding-bottom: 1.5em;
+}
+h1{
+    margin: 0;
+    font-size: 1.7em;
+}
+
+.top-card {
+margin-top: -50px;
+}
 
 .card {
-    border-radius: 5px;
+    border-radius: 8px;
     overflow: hidden;
     background: hsl(227, 47%, 96%);
     text-align: center;
