@@ -1,5 +1,16 @@
 body {
     margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --lime-green: hsl(163, 72%, 41%);
+    --bright-red: hsl(356, 69%, 56%);
+    --facebook: hsl(208, 92%, 53%);
+    --twitter: hsl(203, 89%, 53%);
+    --instagram-1: hsl(37, 97%, 70%);
+    --instagram-2: hsl(329, 70%, 58%);
+    --youTube: hsl(348, 97%, 39%);
 }
 .wrapper{
     padding: 0 30px;
@@ -10,12 +21,26 @@ body {
     border-radius: 5px;
     overflow: hidden;
     background: hsl(227, 47%, 96%);
+    text-align: center;
 
 }
 .card:before {
     content: "";
     height: 4px;
     display: block;
-    background: red;
+    background: var(--facebook);
     
+}
+
+.card-followers {
+
+}
+
+.card-followers__number {
+    font-size: 50px;
+    font-weight: 700;
+}
+.card-followers__title {
+    display: block;
+    text-transform: uppercase;
 }
