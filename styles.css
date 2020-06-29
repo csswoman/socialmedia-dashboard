@@ -38,6 +38,10 @@ body {
     grid-row-gap: 25px;
 }
 
+.checkbox:checked ~ .switch:before{
+    transform: translateX(0px);
+}
+
 .switch {
     display: block;
     height: 40px;
@@ -47,6 +51,7 @@ body {
     padding: 5px;
     box-sizing: border-box;
     cursor: pointer;
+    user-select: none;
 }
 .switch::before{
     content: "";
@@ -55,6 +60,9 @@ body {
     height: 30px;
     background: #262b3e;
     border-radius: 50%;
+    transform: translateX(40px);
+    transition: .3s;
+    will-change: transform;
 }
 
 .header {
