@@ -14,6 +14,7 @@ body {
     --dark-gray: hsl(228, 12%, 44%);
     --gray: hsl(230, 22%, 74%);
     --top-bg: hsl(225, 100%, 98%);
+    --card-bg: hsl(227, 47%, 96%);
 }
 .wrapper{
     padding: 0 30px;
@@ -49,9 +50,9 @@ margin-top: -50px;
 .card {
     border-radius: 8px;
     overflow: hidden;
-    background: hsl(227, 47%, 96%);
+    background: var(--card-bg);
     text-align: center;
-    padding: 2em 0;
+    padding: 1.7em 0;
     position: relative;
 
 }
@@ -116,5 +117,53 @@ margin-top: -50px;
     justify-content: center;
 }
 .card-today img {
+    margin-right: 5px;
+}
+
+.overview {
+    margin-top: 100px;
+}
+
+.card-small {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 1em;
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.7em;
+}
+.card-small p {
+    margin: 0;
+}
+.card-small-views {
+    color: var(--dark-gray);
+    font-weight: bold;
+    font-size: .9em;
+}
+.card-small-icon {
+    text-align: right;
+}
+.card-small-number{
+    font-weight: bold;
+    font-size: 2.5em;
+    line-height: .9;
+}
+.card-small-percentage{
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    color: var(--lime-green);
+    justify-content: flex-end;
+    font-size: .8em;
+    font-weight: bold;
+}
+.card-small-percentage.is-danger{
+    color: var(--bright-red);
+}
+.card-small-percentage span {
+    display: flex;
+    align-items: center;
+}
+.card-small-percentage img {
     margin-right: 5px;
 }
